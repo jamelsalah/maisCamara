@@ -1,101 +1,157 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-    width: 100;
+	width: 100;
 }
 .home-introduction {
-    display: flex;
-    flex-direction: row;
-	background-color: transparent;
-    justify-content: center;
-    align-items: center;
+	width: 1200px;
+	margin: 40px auto;
 
-    margin-top: 50px;
-    width: 95%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 20px 10px;
+	grid-template-areas: ". .";
+
+	text-align: start;
 }
 
-.home-introduction div {
-    width: 50%;
-}
-
-.home-introduction div div {
-    width: 100%;
-}
-
-.home-introduction div h1{
-    letter-spacing: 2.5px;
-    line-height: 35px;
-    padding-left: 6px;
+.home-introduction div h1 {
+	letter-spacing: 2.5px;
+	line-height: 35px;
+	padding-left: 6px;
 }
 
 .home-introduction div p {
-    margin-bottom: 20px;
-    padding-left: 6px;
+	margin-bottom: 20px;
+	padding-left: 6px;
 }
 
 .home-introduction-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
 .home-introduction-buttons button {
-    font-size: 16px;
-    width: 45%;
-    height: 40px;
-    border-radius: 20px;
-    margin: 10px;
+	font-size: 16px;
+	width: 205px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 10px;
+
+	cursor: pointer;
 }
 
-.home-introduction-buttons :first-child{
-    color: white;
-    background-color: rgba(159, 35, 0, 1);
-    border: 1px solid rgba(159, 35, 0, 1);
+.home-introduction-buttons :first-child {
+	color: white;
+	background-color: rgba(159, 35, 0, 1);
+	border: 1px solid rgba(159, 35, 0, 1);
 }
 
-.home-introduction-buttons :first-child:hover{
-    color: rgba(159, 35, 0, 1);
-    background-color: white;
-    border: 1px solid rgba(159, 35, 0, 1);
-    transition: all 0.2s
+.home-introduction-buttons :first-child:hover {
+	color: rgba(159, 35, 0, 1);
+	background-color: white;
+	border: 1px solid rgba(159, 35, 0, 1);
+	transition: all 0.2s;
 }
 
-.home-introduction-buttons :last-child{
-    border: 1px solid rgba(159, 35, 0, 1);
-    color: rgba(159, 35, 0, 1);
+.home-introduction-buttons :last-child {
+	background-color: white;
+	border: 1px solid rgba(159, 35, 0, 1);
+	color: rgba(159, 35, 0, 1);
 }
 
-.home-introduction-buttons :last-child:hover{
-    border: 1px solid rgba(159, 35, 0, 1);
-    background-color: rgba(159, 35, 0, 1);;
-    color: white;
-    transition: all 0.2s
+.home-introduction-buttons :last-child:hover {
+	border: 1px solid rgba(159, 35, 0, 1);
+	background-color: rgba(159, 35, 0, 1);
+	color: white;
+	transition: all 0.2s;
+}
+
+.home-introduction :last-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .linebox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color:rgba(254, 246, 235, 1);
+	display: flex;
+	align-items: center;
+	background-color: rgba(254, 246, 235, 1);
 
-    height: 100px;
-    width: 100%;
-    margin: 100px 0px;
-}
-.linebox span {
-    margin: 0 30px;
-    font-weight: 1000;
+	height: 150px;
+	width: 100%;
+	margin: 100px 0px;
 }
 
+.linebox .content {
+	width: 1200px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.linebox .content .text {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.linebox h3,
+small {
+	color: black !important;
+}
+
+.linebox .trace {
+	width: 32px;
+	height: 6px;
+	background-color: black;
+	margin-bottom: 5px;
+}
+
+.linebox h3 {
+	margin: 0 30px;
+	font-weight: bolder;
+	letter-spacing: 3px;
+}
+
+.linebox small {
+	font-weight: 550;
+	font-size: 9px;
+}
 
 /* Media Queries */
-@media (max-width: 1200) {
-    .home-introduction {
+@media (max-width: 1300px) {
+	.home-introduction {
+		width: 50%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr;
+		gap: 20px 10px;
+		grid-template-areas: ".";
+	}
 
-    }
+	.home-introduction :last-child {
+		
+	}
+}
+
+@media (max-width: 910px) {
+	.linebox .content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+			". ."
+			". ."
+			 ".";
+	}
 }
