@@ -1,0 +1,101 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100;
+}
+.home-introduction {
+    display: flex;
+    flex-direction: row;
+	background-color: transparent;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    width: 95%;
+}
+
+.home-introduction div {
+    width: 50%;
+}
+
+.home-introduction div div {
+    width: 100%;
+}
+
+.home-introduction div h1{
+    letter-spacing: 2.5px;
+    line-height: 35px;
+    padding-left: 6px;
+}
+
+.home-introduction div p {
+    margin-bottom: 20px;
+    padding-left: 6px;
+}
+
+.home-introduction-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-introduction-buttons button {
+    font-size: 16px;
+    width: 45%;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.home-introduction-buttons :first-child{
+    color: white;
+    background-color: rgba(159, 35, 0, 1);
+    border: 1px solid rgba(159, 35, 0, 1);
+}
+
+.home-introduction-buttons :first-child:hover{
+    color: rgba(159, 35, 0, 1);
+    background-color: white;
+    border: 1px solid rgba(159, 35, 0, 1);
+    transition: all 0.2s
+}
+
+.home-introduction-buttons :last-child{
+    border: 1px solid rgba(159, 35, 0, 1);
+    color: rgba(159, 35, 0, 1);
+}
+
+.home-introduction-buttons :last-child:hover{
+    border: 1px solid rgba(159, 35, 0, 1);
+    background-color: rgba(159, 35, 0, 1);;
+    color: white;
+    transition: all 0.2s
+}
+
+.linebox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(254, 246, 235, 1);
+
+    height: 100px;
+    width: 100%;
+    margin: 100px 0px;
+}
+.linebox span {
+    margin: 0 30px;
+    font-weight: 1000;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200) {
+    .home-introduction {
+
+    }
+}
