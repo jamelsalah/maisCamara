@@ -15,26 +15,27 @@ main {
 	grid-template-rows: 1fr;
 	gap: 20px 10px;
 	grid-template-areas: ". .";
-
 	text-align: start;
+	font-size: 20px;
 }
 
 .home-introduction div h1 {
-	letter-spacing: 2.5px;
-	line-height: 35px;
+	letter-spacing: 3px;
+	line-height: 40px;
 	padding-left: 6px;
 }
 
 .home-introduction div p {
 	margin-bottom: 20px;
 	padding-left: 6px;
+	font-size: 16px;
 }
 
 .home-introduction-buttons {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: flex-start !important;
 }
 
 .home-introduction-buttons button {
@@ -79,12 +80,13 @@ main {
 	justify-content: center;
 }
 
+/* Line Box */
 .linebox {
 	display: flex;
 	align-items: center;
 	background-color: rgba(254, 246, 235, 1);
 
-	height: 150px;
+	height: auto;
 	width: 100%;
 	margin: 100px 0px;
 }
@@ -92,11 +94,14 @@ main {
 .linebox .content {
 	width: 1200px;
 	margin: 0 auto;
+	flex-wrap: wrap;
+	row-gap: 20px;
 
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	padding: 40px;
 }
 
 .linebox .content .text {
@@ -128,6 +133,85 @@ small {
 	font-size: 9px;
 }
 
+
+/* Nossas Soluções Content */
+.nossas-solucoes-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.nossas-solucoes-content h1 {
+	letter-spacing: 2px;
+}
+
+.nossas-solucoes-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 800px;
+	height: 55px;
+	text-align: center;
+	padding: 0 20px;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px solid  rgba(159, 35, 0, 1);
+	border-radius: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.nossas-solucoes-menu .menu-select {
+	position: absolute;
+	background-color: rgba(159, 35, 0, 0.2);
+	height : 55px;
+	width: 235px;
+	border: 1px solid rgba(159, 35, 0, 1);
+	border-radius : 50px;
+	left: 0px;
+}
+
+.nossas-solucoes-screen {
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	justify-content: space-between;
+}
+
+.nossas-solucoes-screen .image {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+.nossas-solucoes-screen .text {
+	width: 400px
+}
+
+.nossas-solucoes-screen .text h2, p{
+	margin-bottom: 20px;
+}
+
+.nossas-solucoes-screen .text p{
+	margin-bottom: 30px;
+}
+
+.nossas-solucoes-screen button {
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+
+	cursor: pointer;
+
+	color: white;
+	background-color: rgba(159, 35, 0, 1);
+	border-color: rgba(159, 35, 0, 1);
+}
+
 /* Media Queries */
 @media (max-width: 1300px) {
 	.home-introduction {
@@ -138,20 +222,22 @@ small {
 		grid-template-areas: ".";
 	}
 
-	.home-introduction :last-child {
-		
+	.home-introduction .image{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 150px;
 	}
 }
 
 @media (max-width: 910px) {
-	.linebox .content{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		gap: 0px 0px;
-		grid-template-areas:
-			". ."
-			". ."
-			 ".";
+	.linebox .content {
+		justify-content: space-around;
+	}
+
+	.home-introduction .image image {
+		height: 300px;
+		width: 300px;
 	}
 }
+
