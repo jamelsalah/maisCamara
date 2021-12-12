@@ -14,7 +14,6 @@
 /* Header */
 header {
 	width: 100%;
-	background-color: transparent;
 }
 
 .header-content {
@@ -64,6 +63,12 @@ header {
 	font-weight: 500;
 
 	cursor: pointer;
+}
+
+.menu ul button:hover {
+	color: white;
+	background-color: rgba(245, 157, 35, 1);
+	transition: all 0.2s;
 }
 
 .menu ul .dropdown-icon {

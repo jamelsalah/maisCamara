@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../global.css">
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="styles.css">
+	<title>Mais Camara</title>
+</head>
+
+<body>
+	<header>
+		<div class="header-content">
+			<div class="header-logo">
+				<img width="152px" height="60px" src="../images/maisCamaraLogo (1).png" alt="" srcset="">
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Menu</a></li>
+					<button>Entrar</button>
+
+					<!-- Dropdown Icon (Mobile only) -->
+					<img onclick="openMenu()" class="dropdown-icon" width="60px" src="../images/icons/dropdown-icon.png"
+						alt="" srcset="">
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="side-menu close">
+	</div>
+
+	<div class="dark" onclick="openMenu()"></div>
+
+	<main>
+		<div class="home-introduction">
+			<div class="home-introduction-text">
+				<h1 class="color-red-1" style="font-weight: 600;">Transformando sua realidade com uso</h1>
+				<h1 class="color-orange-1" style="margin-bottom: 20px; font-weight: 950;
+				letter-spacing: 5px;">inteligente de dados</h1>
+				<p>
+					Automação e uso inteligente de inteligência artificial para tornar negócios mais eficientes e
+					lucrativos.
+				</p>
+				<p>
+					Nossas soluções transformam a relação entre empresas e clientes, devedores e credores, instituições
+					públicas e cidadãos. A tecnologia garantindo o seu negócio.
+				</p>
+
+				<div class="home-introduction-buttons">
+					<a href="../contato/index.html">FALE CONOSCO</a>
+					<a href="../privado/index.html">NOSSAS SOLUÇÕES</a>
+				</div>
+			</div>
+			<div class="image">
+				<img src="../images/homeImage.jpeg" alt="">
+			</div>
+		</div>
+
+		<div class="linebox">
+			<div class="content">
+				<div class="text">
+					<div class="trace"></div>
+					<h3>LINEBOX</h3>
+					<small>AGENCY</small>
+				</div>
+				<div class="text">
+					<div class="trace"></div>
+					<h3>LINEBOX</h3>
+					<small>AGENCY</small>
+				</div>
+				<div class="text">
+					<div class="trace"></div>
+					<h3>LINEBOX</h3>
+					<small>AGENCY</small>
+				</div>
+				<div class="text">
+					<div class="trace"></div>
+					<h3>LINEBOX</h3>
+					<small>AGENCY</small>
+				</div>
+				<div class="text">
+					<div class="trace"></div>
+					<h3>LINEBOX</h3>
+					<small>AGENCY</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="nossas-solucoes-content">
+			<h1>Nossas Soluções</h1>
+
+			<div class="nossas-solucoes-menu">
+				<div class="menu-select"></div>
+				<div class="tab_1" onclick="handleCarossel('tab_1')">Gestão de Crédito<br/> e cobrança</div>
+				<div class="tab_2" onclick="handleCarossel('tab_2')">Prospecção de Clientes<br/> e Marketing Digital</div>
+				<div class="tab_3" onclick="handleCarossel('tab_3')">Análise de concessão<br/> de Crédito</div>
+				<div class="tab_4" onclick="handleCarossel('tab_4')">Ferramenta para<br/> Inteligência Fiscal</div>
+			</div>
+
+			<div class="nossas-solucoes-menu-mobile">
+				<div class="tab_1 menu-mobile selected" onclick="handleCarossel('tab_1')">Gestão de Crédito<br/> e cobrança</div>
+				<div class="tab_2 menu-mobile" onclick="handleCarossel('tab_2')">Prospecção de Clientes<br/> e Marketing Digital</div>
+				<div class="tab_3 menu-mobile" onclick="handleCarossel('tab_3')">Análise de concessão<br/> de Crédito</div>
+				<div class="tab_4 menu-mobile" onclick="handleCarossel('tab_4')">Ferramenta para<br/> Inteligência Fiscal</div>
+			</div>
+
+			<div class="nossas-solucoes-screen-content">
+				<div class="nossas-solucoes-screen tab_1 visible">
+					<div class="image">image</div>
+					<div class="text">
+						<h2>Gestão de Crédito</br> e Cobrança</h2>
+						<p>Ter um fluxo de caixa previsível, ser estratégico no recebimento e na concessão
+							de crédito, conhecer, individualizar cada cliente, localizar, comunicar, parcelar,
+							receber e negativar, tudo isso de forma digital e automatizada.
+						</p>
+						<a href="../publico/index.html">SAIBA MAIS</a>
+					</div>
+				</div>
+
+				<div class="nossas-solucoes-screen tab_2">
+					<div class="image">image</div>
+					<div class="text">
+						<h2>Prospecção de Clientes</br> e Marketing Digital</h2>
+						<p>Ter um fluxo de caixa previsível, ser estratégico no recebimento e na concessão
+							de crédito, conhecer, individualizar cada cliente, localizar, comunicar, parcelar,
+							receber e negativar, tudo isso de forma digital e automatizada.
+						</p>
+						<a href="../publico/index.html">SAIBA MAIS</a>
+					</div>
+				</div>
+				<div class="nossas-solucoes-screen tab_3 ">
+					<div class="image">image</div>
+					<div class="text">
+						<h2>Análise e concessão</br> de Crédito</h2>
+						<p>Ter um fluxo de caixa previsível, ser estratégico no recebimento e na concessão
+							de crédito, conhecer, individualizar cada cliente, localizar, comunicar, parcelar,
+							receber e negativar, tudo isso de forma digital e automatizada.
+						</p>
+						<a href="../publico/index.html">SAIBA MAIS</a>
+					</div>
+				</div>
+				<div class="nossas-solucoes-screen tab_4">
+					<div class="image">image</div>
+					<div class="text">
+						<h2>Ferramenta para</br> Inteligência Fiscal</h2>
+						<p>Ter um fluxo de caixa previsível, ser estratégico no recebimento e na concessão
+							de crédito, conhecer, individualizar cada cliente, localizar, comunicar, parcelar,
+							receber e negativar, tudo isso de forma digital e automatizada.
+						</p>
+						<a href="../publico/index.html">SAIBA MAIS</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="como-funciona-content">
+			<h1>Como funciona?</h1>
+
+			<div class="como-funciona-topics">
+
+				<div class="como-funciona-topic">
+					<div class="topic-number"><span>1</span></div>
+					<h2>Valorização da Dignidade do Devedor</h2>
+					<p>
+						Acreditamos que o atual modelo de cobrança é falho e ineficiente,
+						ao premiar o devedor contumaz e não busca conhecer e aprimorar o
+						relacionamento com os consumidores inadimplentes. Nossas soluções
+						promovem a dignidade do devedor estimulando o adimplemento das dívidas
+						e melhorando a boa receptividade da marca, gerando fidelidade e garantindo
+						continuidade na relação comercial.
+					</p>
+				</div>
+
+				<div class="como-funciona-topic">
+					<div class="topic-number"><span>2</span></div>
+					<h2>Inteligência de Dados</h2>
+					<p>
+						Todos os dias as empresas e instituições públicas recebem uma infinidade
+						de dados e não sabem como utilizá-los para melhorar suas atividades e resutados.
+						Nossas soluções organizam a obtenção, estruturação e manutenção dos dados cadastrais
+						e relacionamento com os seus clientes, aliados a inteligência artificial para ampliar
+						a capacidade de gestão e cumprimento de objetivos.
+					</p>
+				</div>
+
+				<div class="como-funciona-topic">
+					<div class="topic-number"><span>3</span></div>
+					<h2>Promoção de<br/> Comunicação Assertiva</h2>
+					<p>
+						A forma como sua empresa se comunica com seus clientes e, principalmente clientes
+						inadimplentes é decisivo para o sucesso do seu negócio. A personalização, organização
+						e análise dos dados são elementos que ampliam a efetividade da publicidade de influenciar
+						seus consumidores.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="integre-outros-sistemas">
+			<div class="integre-outros-sistemas-content">
+				<div class="image">image</div>
+				<div class="integre-outros-sistemas-text">
+					<h1>Integre com outros sistemas</h1>
+					<p>As nossas APIs permitem que os sistemas consultem diretamente a nossa base de dados
+						para obter e atualizar, sob demanda, as informações relevantes para os seus negócios.
+						Multi-estratégia de integração, Arquivos, SFTP, Views e APIs, estamos preparados para
+						atender suas demandas.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="inovacao-e-tecnologia">
+			<div class="inovacao-e-tecnologia-content">
+				<div class="inovacao-e-tecnologia-text">
+					<h1>INOVAÇÃO e TECNOLOGIA</h1>
+					<p>Saia do manual e esqueça a ineficiência, venha para um processo simples e inteligente.
+						Falo conosco e juntos vamos sanar suas nescessidades.
+					</p>
+				</div>
+				<a href="../contato/index.html">Fale Conosco</a>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div>
+				<img width="152px" height="60px" src="../images/maisCamaraLogo (1).png" alt="" srcset="">
+				<p>Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem
+					ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun</p>
+			</div>
+			<div>
+				<div class="infos">
+					<h2>Menu</h2>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+				</div>
+			</div>
+			<div>
+				<div class="infos">
+					<h2>Links úteis</h2>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+				</div>
+			</div>
+			<div>
+				<h2>Redes sociais</h2>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script>
+	function openMenu() {
+		const menu = document.querySelector('.side-menu')
+		const dark = document.querySelector('.dark')
+
+		if (menu.getAttribute('class') === 'side-menu close') {
+			menu.setAttribute('class', 'side-menu open')
+			dark.style.display = 'block'
+			return false
+		}
+
+		if (menu.getAttribute('class') === 'side-menu open') {
+			menu.setAttribute('class', 'side-menu close')
+			dark.style.display = 'none'
+
+		}
+	}
+
+	function handleCarossel(id) {
+		const tabs = {
+			"tab_1": "0px",
+			"tab_2": "220px",
+			"tab_3": "450px",
+			"tab_4": "664px",
+		}
+
+		const menuSelect = document.querySelector(".nossas-solucoes-menu .menu-select");
+		const screens = document.querySelectorAll(".nossas-solucoes-screen");
+		const mobileMenu= document.querySelectorAll(".menu-mobile")
+
+		menuSelect.style.left = tabs[id];
+
+		for(screen of screens) {
+			if(screen.classList.contains(id)) {
+				screen.classList.add("visible");
+			} else {
+				screen.classList.remove("visible");
+			}
+		}
+
+		for(menu of mobileMenu) {
+			if(menu.classList.contains(id)) {
+				menu.classList.add("selected");
+			} else {
+				menu.classList.remove("selected");
+			}
+		}
+	}
+
+</script>
+
+</html>
