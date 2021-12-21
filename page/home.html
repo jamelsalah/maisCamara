@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../global.css">
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div class="header-content">
+			<div class="header-logo">
+				<img width="152px" height="60px" src="../images/maisCamaraLogo (1).png" alt="" srcset="">
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Menu</a></li>
+					<button>Entrar</button>
+
+					<!-- Dropdown Icon (Mobile only) -->
+					<img onclick="openMenu()" class="dropdown-icon" width="60px" src="../images/icons/dropdown-icon.png"
+						alt="" srcset="">
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="side-menu close">
+	</div>
+
+	<div class="dark" onclick="openMenu()"></div>
+
+	<main>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div>
+				<img width="152px" height="60px" src="../images/maisCamaraLogo (1).png" alt="" srcset="">
+				<p>Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem
+					ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun</p>
+			</div>
+			<div>
+				<div class="infos">
+					<h2>Menu</h2>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+				</div>
+			</div>
+			<div>
+				<div class="infos">
+					<h2>Links úteis</h2>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+				</div>
+			</div>
+			<div>
+				<h2>Redes sociais</h2>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script>
+	function openMenu() {
+		const menu = document.querySelector('.side-menu')
+		const dark = document.querySelector('.dark')
+
+		if (menu.getAttribute('class') === 'side-menu close') {
+			menu.setAttribute('class', 'side-menu open')
+			dark.style.display = 'block'
+			return false
+		}
+
+		if (menu.getAttribute('class') === 'side-menu open') {
+			menu.setAttribute('class', 'side-menu close')
+			dark.style.display = 'none'
+
+		}
+	}
+
+</script>
+
+</html>

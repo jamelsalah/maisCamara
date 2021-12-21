@@ -1,0 +1,410 @@
+main {
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.page-introduction-text {
+    max-width: 450px;
+}
+
+.page-introduction-text h1 {
+    color: rgba(159, 35, 0, 1);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.page-introduction-text p {
+   max-width: 450px;
+}
+
+.page-introduction-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 450px;
+}
+
+.page-introduction-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+	width: 205px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 10px;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px rgba(159, 35, 0, 0.15);
+}
+
+.page-introduction-buttons :first-child {
+    color: white;
+	background-color: rgba(159, 35, 0, 1);
+	border: 1px solid rgba(159, 35, 0, 1);
+}
+
+.page-introduction-buttons :first-child:hover {
+    color: rgba(159, 35, 0, 1);
+	background-color: white;
+	border: 1px solid rgba(159, 35, 0, 1);
+	transition: all 0.2s;
+}
+
+.page-introduction-buttons :last-child {
+    background-color: white;
+	border: 1px solid rgba(159, 35, 0, 1);
+	color: rgba(159, 35, 0, 1);
+}
+
+.page-introduction-buttons :last-child:hover {
+    border: 1px solid rgba(159, 35, 0, 1);
+	background-color: rgba(159, 35, 0, 1);
+	color: white;
+	transition: all 0.2s;
+}
+
+
+.page-introduction-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundLogo {
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+	right: -420px;
+	top: -120px;
+	width: 800px;
+	height: 800px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+        ". ."
+        ". .";
+
+    max-width: 630px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(159, 35, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card p {
+    width: 270px;
+    height: 150px;
+}
+
+.middle-tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.middle-tittle h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.middle-tittle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+	width: 205px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 10px;
+
+	cursor: pointer;
+	box-shadow: 3px 3px 3px rgba(159, 35, 0, 0.15);
+
+    color: white;
+	background-color: rgba(159, 35, 0, 1);
+	border: 1px solid rgba(159, 35, 0, 1);
+}
+
+.middle-tittle a:hover {
+    color: rgba(159, 35, 0, 1);
+	background-color: white;
+	border: 1px solid rgba(159, 35, 0, 1);
+	transition: all 0.2s;
+}
+
+.arrecadacao-recuperacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+
+.arrecadacao-recuperacao img {
+    width: 400px;
+    height: 300px;
+}
+
+.arrecadacao-recuperacao-text {
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+.arrecadacao-recuperacao-text h1 {
+    margin-bottom: 30px;
+}
+
+.governo-digital {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.governo-digital-text {
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+.governo-digital-text h1 {
+    margin-bottom: 30px;
+}
+
+.governo-digital img {
+    width: 400px;
+    height: 300px;
+}
+
+.como-funciona {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(159, 35, 0, 0.15);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.como-funciona h1 {
+    margin-bottom: 40px;
+}
+
+.como-funciona-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.como-funciona-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.como-funciona-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color:rgba(159, 35, 0, 1);
+    border:1px solid rgba(159, 35, 0, 1);
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.como-funciona-card p {
+    margin-top: auto;
+}
+
+.estamos-comprometidos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 200px;
+    padding: 40px;
+    gap: 50px;
+    margin-bottom: 50px;
+    border:1px solid rgba(159, 35, 0, 1);
+}
+
+.estamos-comprometidos-text {
+    max-width: 500px;
+}
+
+.estamos-comprometidos-text h1 {
+    color:rgba(159, 35, 0, 1);
+    font-size: 22px;
+}
+
+.estamos-comprometidos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+	width: 205px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 10px;
+
+	cursor: pointer;
+	box-shadow: 3px 3px 3px rgba(159, 35, 0, 0.15);
+
+    color: white;
+	background-color: rgba(159, 35, 0, 1);
+	border: 1px solid rgba(159, 35, 0, 1);
+}
+
+.estamos-comprometidos a:hover {
+    color: rgba(159, 35, 0, 1);
+	background-color: white;
+	border: 1px solid rgba(159, 35, 0, 1);
+	transition: all 0.2s;
+}
+
+
+/* Media Queries */
+@media (max-width: 1060px) {
+    .page-introduction {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .page-introduction-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 875px) {
+    .estamos-comprometidos {
+        flex-direction: column;
+    }
+
+    .estamos-comprometidos h1 {
+        text-align: center;
+    }
+
+    .arrecadacao-recuperacao {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .governo-digital {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 30px 30px;
+        grid-template-areas:
+            "."
+            "."
+            "."
+            ".";
+    }
+}
+
+@media (max-width: 500px) {
+    .page-introduction-text {
+        padding: 5px;
+    }
+
+    .page-introduction-buttons {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 10px;
+    }
+
+    .page-introduction-image {
+        width: 300px;
+        height: 200px;
+    }
+
+    .backgroundLogo {
+        width: 400px;
+        height: 400px;
+        left: 20%;
+    }
+
+    .arrecadacao-recuperacao {
+        align-items: center;
+    }
+
+    .governo-digital {
+        align-items: center;
+    }
+
+    .arrecadacao-recuperacao img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .governo-digital img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .estamos-comprometidos {
+        padding-top: 80px;
+    }
+}
+

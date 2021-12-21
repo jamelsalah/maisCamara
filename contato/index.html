@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../global.css">
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="../images/backgroundLogo.svg" />
+	<title>Contatos</title>
+</head>
+
+<body>
+	<header>
+		<div class="header-content">
+			<div class="header-logo">
+				<img width="152px" height="60px" src="../images/maisCamaraLogo.png" alt="" srcset="">
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../publico/index.html">Público</a></li>
+					<li><a href="../privado/index.html">Privado</a></li>
+					<li><a href="../contato/index.html">Contato</a></li>
+					<button>Entrar</button>
+
+					<!-- Dropdown Icon (Mobile only) -->
+					<img onclick="openMenu()" class="dropdown-icon" width="60px" src="../images/icons/dropdown-icon.png"
+						alt="" srcset="">
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class ="page-title"><h1>Contato</h1></div>
+	<div class="spacer"></div>
+
+	<div class="side-menu close">
+	</div>
+
+	<div class="dark" onclick="openMenu()"></div>
+
+	<main>
+		<div class="content">
+			<div class="form">
+				<h1>Entre em contato conosco</h1>
+
+				<form action="">
+					<input type="text" placeholder="Nome"/>
+					<input type="text" placeholder="E-mail"/>
+					<input type="text" placeholder="Bairro/Cidade"/>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+					<input class="form-submit" type="submit" value="Enviar">
+				</form>
+			</div>
+
+			<div class="contatos">
+				<div class="telefone card">
+					<div class="card-tittle">
+						<img src="../images/telefone.png" alt="Telefone">
+						<h1>Telefone</h1>
+					</div>
+
+					<p>Our customer care is open from Mon-Fri, 10:00 am to 6:00 pm</p>
+					<h2>+55 (11) 98995-0046</h2>
+				</div>
+
+				<div class="email card">
+					<div class="card-tittle">
+						<img src="../images/email.png" alt="Email">
+						<h1>E-mail</h1>
+					</div>
+
+					<p>Nossa equipe entrará em contato em até 48 horas uteis</p>
+					<h2><b>example@gmail.com</b></h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="peca-orcamento">
+			<h1>Lorem ipsum dolor</h1>
+			<button>PEÇA UM ORÇAMENTO</button>
+		</div>
+	</main>
+
+	<footer>
+		<img class="footerBackgroundLogo" src="../images/backgroundLogo.svg" alt="">
+		<div class=footer-spacer></div>
+		<div class="footer-content">
+			<div>
+				<img width="152px" height="60px" src="../images/maisCamaraLogo.png" alt="" srcset="">
+				<p>Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem
+					ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun Lorem ipsun</p>
+			</div>
+			<div>
+				<div class="infos-menu">
+					<h2>Menu</h2>
+					<a href="../index.html">Home</a>
+					<a href="../publico/index.html">Público</a>
+					<a href="../privado/index.html">Privado</a>
+					<a href="../contato/index.html">Contato</a>
+				</div>
+			</div>
+			<div>
+				<div class="infos">
+					<h2>Links úteis</h2>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+					<p>Informação</p>
+				</div>
+			</div>
+			<div>
+				<h2>Redes sociais</h2>
+				<div class="redes-sociais-icons">
+					<a href="#"><img src="../images/icons/icon13.svg" alt=""></a>
+					<a href="#"><img src="../images/icons/icon14.svg" alt=""></a>
+					<a href="https://www.linkedin.com/company/sistema-mais"><img src="../images/icons/icon15.svg" alt=""></a>
+					<a href="#"><img src="../images/icons/icon16.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script>
+	function openMenu() {
+		const menu = document.querySelector('.side-menu')
+		const dark = document.querySelector('.dark')
+
+		if (menu.getAttribute('class') === 'side-menu close') {
+			menu.setAttribute('class', 'side-menu open')
+			dark.style.display = 'block'
+			return false
+		}
+
+		if (menu.getAttribute('class') === 'side-menu open') {
+			menu.setAttribute('class', 'side-menu close')
+			dark.style.display = 'none'
+
+		}
+	}
+
+</script>
+
+</html>

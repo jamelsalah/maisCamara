@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_5233" data-name="Group 5233" transform="translate(-1469.95 -142.5)">
+    <g id="Rectangle_56" data-name="Rectangle 56" transform="translate(1469.95 142.5)" fill="none" stroke="#f59d23" stroke-width="1">
+      <rect width="40" height="40" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" fill="none"/>
+    </g>
+    <g id="XMLID_801_" transform="translate(1480.664 153.233)">
+      <path id="XMLID_802_" d="M8.884,99.73H5.221a.294.294,0,0,0-.294.294V111.79a.294.294,0,0,0,.294.294H8.884a.294.294,0,0,0,.294-.294V100.024A.294.294,0,0,0,8.884,99.73Z" transform="translate(-4.637 -93.551)" fill="#f59d23"/>
+      <path id="XMLID_803_" d="M2.417.341A2.415,2.415,0,1,0,4.832,2.755,2.418,2.418,0,0,0,2.417.341Z" transform="translate(0 -0.341)" fill="#f59d23"/>
+      <path id="XMLID_804_" d="M113.49,94.761a4.3,4.3,0,0,0-3.218,1.351v-.764a.294.294,0,0,0-.294-.294H106.47a.294.294,0,0,0-.294.294v11.766a.294.294,0,0,0,.294.294h3.654a.294.294,0,0,0,.294-.294v-5.821c0-1.962.533-2.726,1.9-2.726,1.489,0,1.608,1.225,1.608,2.827v5.721a.294.294,0,0,0,.294.294h3.656a.294.294,0,0,0,.294-.294V100.66C118.171,97.743,117.615,94.761,113.49,94.761Z" transform="translate(-99.599 -88.874)" fill="#f59d23"/>
+    </g>
+  </g>
+</svg>
